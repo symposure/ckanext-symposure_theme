@@ -30,6 +30,7 @@ body {
 
 .hero {
   background-color: #222 !important;
+  min-height: 100px !important;
 }
 
 .gravatar {
