@@ -1,0 +1,25 @@
+{% ckan_extends %}
+
+{% block primary_content %}
+<div role="main" class="hero">
+  <div class="container">
+    {% snippet 'home/snippets/promoted.html' %}
+  </div>
+</div>
+<div role="main">
+  <div class="container">
+    <div class="box">
+      <section class="group-list module module-narrow module-shallow">
+        <header class="module-heading">
+          <h3 class="media-heading"><a href="{% url_for controller='package', action='search', sort='metadata_created desc' %}">{{ _("Last updated") }}</a></h3>
+        </header>
+        {% set list_class = "unstyled dataset-list" %}
+        {% set item_class = "dataset-item module-content" %}
+        {% set truncate = 120 %}
+        {% set truncate_title = 50 %}
+        {% snippet 'snippets/package_list.html', packages=h.symposure_theme_latest_datasets(), list_class=list_class, item_class=item_class, truncate=truncate, truncate_title=truncate_title %}
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock %}

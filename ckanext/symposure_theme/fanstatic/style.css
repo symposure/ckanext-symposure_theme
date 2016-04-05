@@ -1,0 +1,42 @@
+body, .masthead, .hero, [role=main], .site-footer {
+  background-image: none !important;
+}
+
+body {
+  background-color: #111 !important;
+}
+
+.masthead {
+  background-color: #111 !important;
+  padding: 5px 0px 15px 0px !important;
+}
+
+.masthead a.logo img {
+  height: 55px !important;
+}
+
+.masthead .btn-navbar {
+  background-color: #222 !important;
+}
+
+.masthead .nav a {
+  color: #fff !important;
+}
+
+.masthead .nav a:hover, .masthead .nav li.active a {
+  background-color: #222 !important;
+  color: #fff !important;
+}
+
+.hero {
+  background-color: #222 !important;
+}
+
+.gravatar {
+  display: none !important;
+}
+
+.site-footer {
+  background-color: #111 !important;
+  color: #fff !important;
+}
